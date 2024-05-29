@@ -18,19 +18,40 @@
 //     fmt.Println("pi:", pi) // Imprime: pi: 3.14
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+//     // Uso de int para simplificar y dejar que el compilador maneje el tamaño
+//     var edad int = 25
+//     var salario int = 50000
+
+//     fmt.Println("Edad:", edad)       // Imprime: Edad: 25
+//     fmt.Println("Salario:", salario) // Imprime: Salario: 50000
+
+//     // Uso de tamaños específicos cuando es necesario
+//     var poblacionMundial int64 = 7800000000
+//     fmt.Println("Población Mundial:", poblacionMundial) // Imprime: Población Mundial: 7800000000
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-    // Uso de int para simplificar y dejar que el compilador maneje el tamaño
+    // Uso de int para la mayoría de los casos
     var edad int = 25
     var salario int = 50000
 
     fmt.Println("Edad:", edad)       // Imprime: Edad: 25
     fmt.Println("Salario:", salario) // Imprime: Salario: 50000
 
-    // Uso de tamaños específicos cuando es necesario
+    // Uso de int64 para números muy grandes
     var poblacionMundial int64 = 7800000000
     fmt.Println("Población Mundial:", poblacionMundial) // Imprime: Población Mundial: 7800000000
+
+    // Uso de int8 para optimización de memoria
+    var temperatura int8 = 30
+    fmt.Println("Temperatura:", temperatura) // Imprime: Temperatura: 30
 }
